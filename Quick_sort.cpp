@@ -1,12 +1,10 @@
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 // Function to swap two elements
-void swap(int& a, int& b) {
-    int t = a;
-    a = b;
-    b = t;
+void swap(int *a, int *b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
 }
 
 // Function to partition the array and return the partition index
@@ -18,10 +16,10 @@ int partition(int arr[], int low, int high) {
         // If the current element is smaller than the pivot
         if (arr[j] < pivot) {
             i++; // increment index of smaller element
-            swap(arr[i], arr[j]);
+            swap(&arr[i], &arr[j]);
         }
     }
-    swap(arr[i + 1], arr[high]);
+    swap(&arr[i + 1], &arr[high]);
     return (i + 1);
 }
 
@@ -31,11 +29,11 @@ void quick_sort(int arr[], int low, int high, int size) {
         int pi = partition(arr, low, high);
 
         // Print the array after partitioning
-        cout << "After partitioning around pivot " << arr[pi] << ": ";
+        printf("After partitioning around pivot %d: ", arr[pi]);
         for (int i = 0; i < size; i++) {
-            cout << arr[i] << " ";
+            printf("%d ", arr[i]);
         }
-        cout << "\n";
+        printf("\n");
 
         quick_sort(arr, low, pi - 1, size);
         quick_sort(arr, pi + 1, high, size);
@@ -45,21 +43,20 @@ void quick_sort(int arr[], int low, int high, int size) {
 // Function to print the array
 void print_array(const int arr[], int size) {
     for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
+        printf("%d ", arr[i]);
     }
-    cout << "\n";
+    printf("\n");
 }
 
 // Main function
 int main() {
     int arr[] = {10, 7, 8, 9, 1, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout << "Quick Sort \n";
-    cout << "Given array is \n";
+    printf("Quick Sort \n");
+    printf("Given array is \n");
     print_array(arr, n);
     quick_sort(arr, 0, n - 1, n);
-    cout << "Sorted array is \n";
+    printf("Sorted array is \n");
     print_array(arr, n);
     return 0;
 }
-
