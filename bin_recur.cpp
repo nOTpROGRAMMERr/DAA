@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+
 
 int binarySearch(int arr[], int low, int high, int target) {
     if (high >= low) {
@@ -25,13 +25,13 @@ int main() {
 	int target;
     int arr[] = {2, 3, 4, 10, 40};
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout << "Enter a no to be searched:";
-    cin >> target;
+    printf("Enter a no to be searched:");
+    scanf("%d",&target);
     int result = binarySearch(arr, 0, n - 1, target);
     if(result == -1)
-        cout << "Element is not present in array";
+        printf("Element is not present in array");
     else
-        cout << "Element is present at index " << result;
+        printf("Element is present at index %d\n", result);
     return 0;
 }
 
