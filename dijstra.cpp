@@ -1,7 +1,7 @@
     #include <limits.h>
     #include <stdbool.h>
     #include <stdio.h>
-
+    //O(E+VlogV)
 
     #define V 9
 

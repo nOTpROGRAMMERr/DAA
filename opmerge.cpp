@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//O(nlogn)
 void printFiles(int files[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", files[i]);

@@ -58,6 +58,7 @@
 
 #include <stdio.h>
 
+//O(nlogn) for sorting, followed by 𝑂 ( 𝑛 ) O(n) for selection.
 struct Item {
     int value;
     int weight;

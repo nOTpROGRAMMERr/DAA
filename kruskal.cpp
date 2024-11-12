@@ -1,4 +1,7 @@
 #include<stdio.h>
+
+//O(ElogE)
+
 int i,j,k,a,b,u,v,n,ne=1;
 int min,mincost=0,cost[9][9],parent[9];
 int find(int i)

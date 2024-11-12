@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//𝑂(𝑛𝑊)
 
 int knapsackDP(int W, int weight[], int value[], int n) {
     int dp[n + 1][W + 1];

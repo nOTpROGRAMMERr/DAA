@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//O(nlogn) on average, 𝑂 ( 𝑛 2 ) O(n 2 ) in the worst case.
 // Function to swap two elements
 void swap(int *a, int *b) {
     int t = *a;

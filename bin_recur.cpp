@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//O(logn)
 
 int binarySearch(int arr[], int low, int high, int target) {
     if (high >= low) {
