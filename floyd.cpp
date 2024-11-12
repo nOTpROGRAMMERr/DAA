@@ -7,10 +7,11 @@ void printSolution(int dist[][V]) {
     
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
-            if (dist[i][j] == INF)
-                printf("%7s", "INF");
-            else
-                printf("%7d", dist[i][j]);
+            // if (dist[i][j] == INF)
+            //     printf("%7s", "INF");
+            // else
+            //     printf("%7d", dist[i][j]);
+            printf(" %d ",dist[i][j]);
         }
         printf("\n");
     }
