@@ -5,7 +5,7 @@
 
 ![image.png](attachment:13131a04-0b16-49e1-82ab-5d67dc0539f1:image.png)
 
-# **How It All Works Together**
+ **How It All Works Together**
 
 1. The **Crew** organizes the overall operation
 2. **AI Agents** work on their specialized tasks
@@ -20,13 +20,15 @@
 
 - **Integration Capabilities**: Compatibility with various tools and platforms, facilitating seamless integration into existing workflows.Can craft custom tools tailored for their agent’s needs or utilize pre-built options.
 
-#**Installation**
+***Installation***
 CrewAI requires Python >=3.10 and <3.13. Here’s how to check your version
+
 **Installing CrewAI**
 Terminal
 ```powershell
 pip install 'crewai[tools]'
 ```
+
 **Creating a New Project**
 ```powershell
 crewai create crew <project_name>
@@ -55,6 +57,7 @@ Create your crew
 ```powershell
 crewai create crew latest-ai-development
 ```
+
 **Modify Your Agents.yaml and Tasks.yaml file according to your project Requirements**
 You can also modify the agents and tasks as needed to fit your use case or copy and paste as is to your project. Any variable interpolated in your agents.yaml and tasks.yaml files like {topic} will be replaced by the value of the variable in the main.py file.
  **Modify your `crew.py` file**
