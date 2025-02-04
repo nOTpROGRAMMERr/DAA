@@ -24,10 +24,16 @@ Orchestrating autonomous AI agents, lets us create AI teams where each agent has
 
 CrewAI requires Python >=3.10 and <3.13.
 
+Microsoft Visual C++ 14.0 or greater is required
+
 **Installing CrewAI**
 
 ```powershell
 pip install 'crewai[tools]'
+```
+or 
+```powershell
+pip install crewai crewai-tools
 ```
 **Creating a New Project**
 ```powershell
