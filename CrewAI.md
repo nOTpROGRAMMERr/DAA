@@ -140,3 +140,4 @@ crewai run
 You should see the output in the console and the **report.md** file should be created in the root of your project with the final report.
 
 # **Working Video**
+Link : https://www.loom.com/share/abba19bba91d428cab9da064c9be2989?sid=85604663-88e7-49d5-9b5e-92b1ed4f8059
