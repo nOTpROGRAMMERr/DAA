@@ -132,9 +132,11 @@ crewai install
 **Run your crew**
 
 ```powershell
-Run your crew
+crewai run
 ```
 
 **Your final report**
 
 You should see the output in the console and the **report.md** file should be created in the root of your project with the final report.
+
+# **Working Video**
