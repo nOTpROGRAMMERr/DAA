@@ -3,7 +3,8 @@
 - **Overview of CrewAI**: **Orchestrating autonomous AI agents, lets us create AI teams where each agent has specific roles, tools, and goals, working together to accomplish complex tasks.**
 - 
 
-![image.png](attachment:13131a04-0b16-49e1-82ab-5d67dc0539f1:image.png)
+![image](https://github.com/user-attachments/assets/9e3bada1-def9-4e12-ba4e-cfc9accd9b70)
+
 
  **How It All Works Together**
 
@@ -34,6 +35,7 @@ pip install 'crewai[tools]'
 crewai create crew <project_name>
 ```
 This creates a new project with the following structure:
+
 ![image](https://github.com/user-attachments/assets/08da6c64-ffe4-42c4-a564-0136e2a4bec9)
 
 
