@@ -12,7 +12,7 @@
 3. The **Process** ensures smooth collaboration
 4. **Tasks** get completed to achieve the goal
 
-**4. Key Features**
+**2. Key Features**
 
 - **Role-Based Agent Design**: Think of an agent as a specialized team member with specific skills, expertise, and responsibilities. For example, a Researcher agent might excel at gathering and analyzing information, while a Writer agent might be better at creating content.
 
@@ -20,7 +20,7 @@
 
 - **Integration Capabilities**: Compatibility with various tools and platforms, facilitating seamless integration into existing workflows.Can craft custom tools tailored for their agent’s needs or utilize pre-built options.
 
-***Installation***
+***3.Installation***
 CrewAI requires Python >=3.10 and <3.13. Here’s how to check your version
 
 **Installing CrewAI**
@@ -34,22 +34,8 @@ pip install 'crewai[tools]'
 crewai create crew <project_name>
 ```
 This creates a new project with the following structure:
-                my_project/
-                ├── .gitignore
-                ├── pyproject.toml
-                ├── README.md
-                ├── .env
-                └── src/
-                    └── my_project/
-                        ├── __init__.py
-                        ├── main.py
-                        ├── crew.py
-                        ├── tools/
-                        │   ├── custom_tool.py
-                        │   └── __init__.py
-                        └── config/
-                            ├── agents.yaml
-                            └── tasks.yaml
+![image](https://github.com/user-attachments/assets/08da6c64-ffe4-42c4-a564-0136e2a4bec9)
+
 
 
 #**Quick Start**
