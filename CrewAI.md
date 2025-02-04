@@ -1,59 +1,54 @@
-**1. Introduction**
+# **Introduction**
 
-- **Overview of CrewAI**: **Orchestrating autonomous AI agents, lets us create AI teams where each agent has specific roles, tools, and goals, working together to accomplish complex tasks.**
+- **Overview of CrewAI**: 
 
-![image](https://github.com/user-attachments/assets/9e3bada1-def9-4e12-ba4e-cfc9accd9b70)
+Orchestrating autonomous AI agents, lets us create AI teams where each agent has specific roles, tools, and goals, working together to accomplish complex tasks.
+![img.png](img.png)
 
-
- **How It All Works Together**
+# **How It All Works Together**
 
 1. The **Crew** organizes the overall operation
 2. **AI Agents** work on their specialized tasks
 3. The **Process** ensures smooth collaboration
 4. **Tasks** get completed to achieve the goal
 
-**2. Key Features**
+# **Key Features**
 
 - **Role-Based Agent Design**: Think of an agent as a specialized team member with specific skills, expertise, and responsibilities. For example, a Researcher agent might excel at gathering and analyzing information, while a Writer agent might be better at creating content.
 
-- **Autonomous Collaboration /Intelligent Collaboration :**A crew in crewAI represents a collaborative group of agents working together to achieve a set of tasks. Each crew defines the strategy for task execution, agent collaboration, and the overall workflow.
+- **Autonomous Collaboration /Intelligent Collaboration** :A crew in crewAI represents a collaborative group of agents working together to achieve a set of tasks. Each crew defines the strategy for task execution, agent collaboration, and the overall workflow.
 
 - **Integration Capabilities**: Compatibility with various tools and platforms, facilitating seamless integration into existing workflows.Can craft custom tools tailored for their agent’s needs or utilize pre-built options.
 
-***3.Installation***
-CrewAI requires Python >=3.10 and <3.13. Here’s how to check your version
+# ***Installation***
+
+CrewAI requires Python >=3.10 and <3.13.
 
 **Installing CrewAI**
-Terminal
+
 ```powershell
 pip install 'crewai[tools]'
 ```
-
 **Creating a New Project**
 ```powershell
-crewai create crew <project_name>
+crewai create crew my_project
 ```
-
 This creates a new project with the following structure:
 
-![image](https://github.com/user-attachments/assets/08da6c64-ffe4-42c4-a564-0136e2a4bec9)
+![img_1.png](img_1.png)
 
 
+# **Quick Start**
+Create your crew (Do not If Already created)
 
-#**Quick Start**
-
-Create your crew
 ```powershell
 crewai create crew latest-ai-development
 ```
-
 **Modify Your Agents.yaml and Tasks.yaml file according to your project Requirements**
 
 You can also modify the agents and tasks as needed to fit your use case or copy and paste as is to your project. Any variable interpolated in your agents.yaml and tasks.yaml files like {topic} will be replaced by the value of the variable in the main.py file.
 
- 
- **Modify your `crew.py` file**
-
+**Modify your `crew.py` file**
  ```python
 # src/latest_ai_development/crew.py
 from crewai import Agent, Crew, Process, Task
@@ -103,8 +98,6 @@ class LatestAiDevelopmentCrew():
     )
 
 ```
-
-
 **Feel free to pass custom inputs to your crew**
 
 ```python
@@ -123,6 +116,12 @@ def run():
   LatestAiDevelopmentCrew().crew().kickoff(inputs=inputs)
 
 ```
+**Lock and install the dependencies (Imp)**
+```powershell
+cd latest-ai-development
+
+crewai install
+```
 
 **Run your crew**
 
@@ -132,5 +131,4 @@ Run your crew
 
 **Your final report**
 
-
-You should see the output in the console and the report.md file should be created in the root of your project with the final report.
+You should see the output in the console and the **report.md** file should be created in the root of your project with the final report.
