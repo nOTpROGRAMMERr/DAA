@@ -1,7 +1,6 @@
 **1. Introduction**
 
 - **Overview of CrewAI**: **Orchestrating autonomous AI agents, lets us create AI teams where each agent has specific roles, tools, and goals, working together to accomplish complex tasks.**
-- 
 
 ![image](https://github.com/user-attachments/assets/9e3bada1-def9-4e12-ba4e-cfc9accd9b70)
 
