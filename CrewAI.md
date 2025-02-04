@@ -33,6 +33,7 @@ pip install 'crewai[tools]'
 ```powershell
 crewai create crew <project_name>
 ```
+
 This creates a new project with the following structure:
 
 ![image](https://github.com/user-attachments/assets/08da6c64-ffe4-42c4-a564-0136e2a4bec9)
@@ -40,14 +41,19 @@ This creates a new project with the following structure:
 
 
 #**Quick Start**
+
 Create your crew
 ```powershell
 crewai create crew latest-ai-development
 ```
 
 **Modify Your Agents.yaml and Tasks.yaml file according to your project Requirements**
+
 You can also modify the agents and tasks as needed to fit your use case or copy and paste as is to your project. Any variable interpolated in your agents.yaml and tasks.yaml files like {topic} will be replaced by the value of the variable in the main.py file.
+
+ 
  **Modify your `crew.py` file**
+
  ```python
 # src/latest_ai_development/crew.py
 from crewai import Agent, Crew, Process, Task
@@ -97,6 +103,8 @@ class LatestAiDevelopmentCrew():
     )
 
 ```
+
+
 **Feel free to pass custom inputs to your crew**
 
 ```python
@@ -115,6 +123,7 @@ def run():
   LatestAiDevelopmentCrew().crew().kickoff(inputs=inputs)
 
 ```
+
 **Run your crew**
 
 ```powershell
@@ -122,4 +131,6 @@ Run your crew
 ```
 
 **Your final report**
+
+
 You should see the output in the console and the report.md file should be created in the root of your project with the final report.
