@@ -72,7 +72,7 @@ To find a candidate matching a query such as “Senior Data Scientist with exper
 ## 6. Handling Token Limits  
 
 To maintain efficiency:  
-- Each chunk is **limited to 200 tokens**, ensuring vector embeddings remain compact.  
+- Each chunk is **limited to 200 (± 25) tokens**, ensuring vector embeddings remain compact.  
 - LLMs **summarize long sections** before storage.  
 - Metadata-based filtering **reduces unnecessary vector comparisons**.  
 
