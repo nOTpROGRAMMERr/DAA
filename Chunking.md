@@ -49,7 +49,7 @@ To efficiently search and retrieve relevant candidates, each chunk is enriched w
 
 ## 4. Using LLM for Summarization  
 
-For longer sections, an LLM is used to summarize content into a fixed token limit (e.g., 200 tokens per chunk). This ensures:  
+For longer sections, an LLM is used to summarize content into a fixed token limit (e.g., 225 tokens per chunk). This ensures:  
 - **Efficient storage:** Prevents excessively large chunks in vector search.  
 - **Consistent retrieval:** Enables better similarity search results.  
 - **Controlled response size:** Keeps query responses within manageable token limits.  
@@ -72,7 +72,7 @@ To find a candidate matching a query such as “Senior Data Scientist with exper
 ## 6. Handling Token Limits  
 
 To maintain efficiency:  
-- Each chunk is **limited to 200 (± 25) tokens**, ensuring vector embeddings remain compact.  
+- Each chunk is **limited to 225 tokens**, ensuring vector embeddings remain compact.  
 - LLMs **summarize long sections** before storage.  
 - Metadata-based filtering **reduces unnecessary vector comparisons**.  
 
